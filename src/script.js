@@ -5,8 +5,15 @@ function startScript() {
     const promptContainer = document.createElement('div');
     promptContainer.style = 'background:black;color:white;padding:20px;border-radius:10px;text-align:center;width:300px;box-shadow:0 4px 8px rgba(0,0,0,0.1)';
 
+    // Verificar se há elementos com a classe "text-gem-poe"
+    const hasGems = document.querySelectorAll('span.text-gem-poe').length > 0;
+
     const message = document.createElement('p');
-    message.textContent = 'Deseja remover todas as dicas que não tem relação com Gemas?';
+    if (hasGems) {
+        message.textContent = 'Deseja manter as dicas que não tem relação com Gemas?';
+    } else {
+        message.textContent = 'Configure as gemas no botão "Pick Gems" para uma melhor experiência!';
+    }
 
     const yesButton = document.createElement('button');
     yesButton.textContent = 'Sim';
@@ -16,22 +23,41 @@ function startScript() {
     noButton.textContent = 'Não';
     noButton.style = 'background:#f44336;color:white;border:none;padding:10px 20px;border-radius:5px;cursor:pointer';
 
-    yesButton.onclick = () => {
-        removeTipsWithoutGems();
-        document.body.removeChild(overlay);
-        showLoader();
-        continueProcess();
-    };
-    noButton.onclick = () => {
-        document.body.removeChild(overlay);
-        showLoader();
-        continueProcess();
-    };
+    const downloadButton = document.createElement('button');
+    downloadButton.textContent = 'Download';
+    downloadButton.style = 'background:#2196F3;color:white;border:none;padding:10px 20px;border-radius:5px;cursor:pointer;margin-top:10px';
 
-    promptContainer.append(message, yesButton, noButton);
+    if (hasGems) {
+        promptContainer.append(message, yesButton, noButton);
+
+        yesButton.onclick = () => {
+            document.body.removeChild(overlay);
+            showLoader();
+            continueProcess();
+        };
+        noButton.onclick = () => {
+            removeTipsWithoutGems();
+            document.body.removeChild(overlay);
+            showLoader();
+            continueProcess();
+        };
+    } else {
+        message.textContent = 'Configure as gemas no botão "Pick Gems" para uma melhor experiência!';
+        promptContainer.append(message, downloadButton);
+
+        downloadButton.onclick = () => {
+            document.body.removeChild(overlay);
+            showLoader();
+            continueProcess(); // Acionar o processo de salvar a página
+        };
+    }
+
     overlay.appendChild(promptContainer);
     document.body.appendChild(overlay);
 }
+
+
+
 
 function showLoader() {
     const loaderOverlay = document.createElement('div');

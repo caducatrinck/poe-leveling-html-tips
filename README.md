@@ -27,8 +27,8 @@ Este repositório contém um script que você pode usar para processar uma pági
    - Copie o código do [`script.js`](src/script.js) e cole-o no console do navegador.
 
 5. **Responda ao Prompt**
-
-   - Um prompt aparecerá perguntando se você deseja remover todas as dicas que não têm relação com as gemas. Clique em "Sim" se desejar prosseguir com a remoção.
+   - Caso você tenha configurado as gemas um prompt aparecerá perguntando se você deseja manter todas as dicas que não têm relação com as gemas. Clique em "Sim" se desejar.
+   - Caso você não tenha configurado as gemas, um prompt aparecerá com um botão de download, clique em download para baixar o HTML da pagina.
 
 6. **Aguarde o Download**
 

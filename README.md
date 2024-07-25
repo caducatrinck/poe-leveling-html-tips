@@ -1,5 +1,5 @@
 ___________________________________________________________
-                            GUIA EM PORTUGUÊS
+                                                            GUIA EM PORTUGUÊS
 ___________________________________________________________
 
 # Guia de Uso do Script
@@ -36,7 +36,7 @@ Este repositório contém um script que você pode usar para processar uma pági
 
 
 ___________________________________________________________
-                            ENGLISH GUIDE
+                                                            ENGLISH GUIDE
 ___________________________________________________________
 
 

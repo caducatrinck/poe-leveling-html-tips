@@ -1,10 +1,10 @@
 ___________________________________________________________
-                                                            GUIA EM PORTUGUÊS
+                            GUIA EM PORTUGUÊS
 ___________________________________________________________
 
 # Guia de Uso do Script
 
-Este repositório contém um script que você pode usar para processar uma página no site <a href="https://poe-leveling.com" target="_blank" rel="noopener noreferrer">https://poe-leveling.com</a>. A seguir, você encontrará um guia passo a passo para usar o script e realizar o download da página processada.
+Este repositório contém um script que você pode usar para processar uma página no site [https://poe-leveling.com](https://poe-leveling.com). A seguir, você encontrará um guia passo a passo para usar o script e realizar o download da página processada.
 
 ## Passo a Passo
 
@@ -36,7 +36,7 @@ Este repositório contém um script que você pode usar para processar uma pági
 
 
 ___________________________________________________________
-                                                            ENGLISH GUIDE
+                            ENGLISH GUIDE
 ___________________________________________________________
 
 
@@ -68,7 +68,8 @@ This repository contains a script that you can use to process a page on the webs
 
 5. **Respond to the Prompt**
 
-   - A prompt will appear asking if you want to remove all tips not related to the gems. Click "Yes" if you want to proceed with the removal.
+   - If you have configured the gems, a prompt will appear asking if you want to keep all the tips that are not related to the gems. Click "Yes" if you do.
+   - If you have not configured the gems, a prompt will appear with a download button. Click "Download" to save the HTML of the page.
 
 6. **Wait for the Download**
 

@@ -4,7 +4,7 @@ ___________________________________________________________
 
 # Guia de Uso do Script
 
-Este repositório contém um script que você pode usar para processar uma página no site <a href="https://poe-leveling.com" target="_blank">https://poe-leveling.com</a>. A seguir, você encontrará um guia passo a passo para usar o script e realizar o download da página processada.
+Este repositório contém um script que você pode usar para processar uma página no site <a href="https://poe-leveling.com" target="_blank" rel="noopener noreferrer">https://poe-leveling.com</a>. A seguir, você encontrará um guia passo a passo para usar o script e realizar o download da página processada.
 
 ## Passo a Passo
 
